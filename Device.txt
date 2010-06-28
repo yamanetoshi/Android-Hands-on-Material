@@ -1,0 +1,25 @@
+-音声入力
+--google なデバイスのみ
+--音声検索 api 必須
+-サンプル確認
+--http://db.tt/ETXCOa
+--ACTION_RECOGNIZE_SPEECH
+--ACTION_WEB_SEARCH 
+-実機で動かしてみる
+-GPS
+-permission
+-取得手順
+-MapView との連携
+--現在位置を Map 表示の例
+-エミュレータ
+-camera
+--略する方向?
+-センサ
+--方位 SENSOR_ORIENTATION
+--加速度 SENSOR_ACCELEROMETER
+--温度 SENSOR_TEMPERATURE
+--磁場 SENSOR_MAGNETIC_FIELD
+--光 SENSOR_LIGHT
+--近接 SENSOR_PROXIMITY
+-搭載判定
+-使い方は略

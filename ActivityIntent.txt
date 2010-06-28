@@ -1,0 +1,27 @@
+-アプリケーションの構造について
+--Anatomy of Android Application より
+---Activity
+---Broadcast Intent Receiver
+---Service
+---Content Provider
+--以下でフォロー (英語だが、な件
+---http://www.cs.pitt.edu/~tps9/anatomy.html 
+---ホワイトボードがあればマンガを書く
+-Activity の LifeCycle
+--http://codezine.jp/article/detail/4657 (Lifecycle と Intent
+-ログ出力による動作確認
+--Source -> Override/Implement Methods
+---追加するメソドの列挙 (スライド
+--実装して動作確認
+-Intent
+--Intent == 非同期メセジ
+--画面遷移の例
+---http://gallop.ddo.jp/blog/airia/2009/06/android-1.html
+---wiki に zipped なプロジェクトを投入
+---Eclipse に import して確認
+--サブ画面を増やしてみる
+--ログ出力による動作確認もしてみる
+-開発の基礎
+--http://developer.android.com/intl/ja/guide/topics/fundamentals.html
+--http://bit.ly/KMrsQ
+

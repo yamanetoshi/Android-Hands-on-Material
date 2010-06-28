@@ -1,0 +1,17 @@
+-簡単なサンプル
+--Manifest で permission の追加
+--WebView オブジェクトの生成
+--loadUrl
+--javascript 使えない (google maps)
+--http://db.tt/N5fz7L
+-javascriptEnabled してみる
+--google maps 表示可能
+--重い
+-assets フォルダ
+--ローカルな html の読み込み
+--loadUrl("file:///android_asset/xxx.html")
+-javascript 連携
+--javascriptInterface
+--サンプル提示？
+--GPS は使わないナニ
+-Async (非同期) な件

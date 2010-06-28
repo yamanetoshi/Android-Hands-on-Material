@@ -1,0 +1,100 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+\section*{Git}
+\vspace*{13mm}
+\begin{center}
+{\Huge {\bf Git の\\慣用的な使い方}}
+\end{center}
+
+\section*{コミットまでの流れ}
+\bigskip
+\begin{itemize}
+\item 共用リポジトリから clone 又は pull
+\bigskip
+\item branch 作成
+\bigskip
+\item 修正盛り込みや試験実施
+\bigskip
+\item インデクスに必要な修正を盛り込む (git add)
+\bigskip
+\item branch にコミット
+\end{itemize}
+
+\section*{コミットまでの流れ (コマンド編)}
+\bigskip
+\begin{itemize}
+\item \begin{verbatim}git clone <shared repository URL>\end{verbatim}
+\medskip
+\item \begin{verbatim}git pull\end{verbatim}
+\medskip
+\item \begin{verbatim}git checkout -b <new branch name>\end{verbatim}
+\medskip
+\item \begin{verbatim}git add <path to be added>\end{verbatim}
+\medskip
+\item \begin{verbatim}git commit -m 'comment'\end{verbatim}
+\end{itemize}
+
+\section*{コミットのその後}
+\bigskip
+\begin{itemize}
+\item 共用リポジトリへのアクセス権限 (書き込み) がある場合
+\bigskip
+\item 共用リポジトリへのアクセス権限 (書き込み) がない場合
+\end{itemize}
+
+\section*{書き込みアクセス権限あり}
+\bigskip
+\begin{itemize}
+\item 共用リポジトリから最新の状態を pull
+\bigskip
+\item master ブランチと merge (--no-ff 推奨)
+ \begin{itemize}
+ \item conflict 起きる可能性あり
+ \item 自動で 3-way merge してくれる?
+ \end{itemize}
+\bigskip
+\item 共用リポジトリに push
+\end{itemize}
+
+\section*{コマンド例}
+\medskip
+\begin{itemize}
+\item \begin{verbatim}git checkout master\end{verbatim}
+\medskip
+\item \begin{verbatim}git pull\end{verbatim}
+\medskip
+\item \begin{verbatim}git merge --no-ff <branch name>\end{verbatim}
+\medskip
+\item \begin{verbatim}git push\end{verbatim}
+\end{itemize}
+
+\section*{書き込みアクセス権限なし}
+\bigskip
+\begin{itemize}
+\item format-patch master でパッチ出力
+\bigskip
+\item コミッタ宛てパッチ送付
+\bigskip
+\item git am (コミッタによる)
+\end{itemize}
+注意:共用リポジトリ側で歴史が進んでいる可能性がある
+
+\section*{不具合対応 (その一)}
+\bigskip
+\begin{itemize}
+\item パッチの元バージョンから branch
+\bigskip
+\item git am する
+\bigskip
+\item master と merge
+\end{itemize}
+
+\section*{不具合対応 (その二)}
+\bigskip
+\begin{itemize}
+\item git am -3 で無理矢理 3-way merge
+\end{itemize}
+
+\end{document}

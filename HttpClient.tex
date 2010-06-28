@@ -1,0 +1,74 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+\section*{HttpClient}
+\vspace*{15mm}
+\begin{center}
+{\Huge {\bf Http 通信について}}
+\end{center}
+
+\section*{HttpClient}
+\bigskip
+\begin{itemize}
+\item apache.org の成果物
+\bigskip
+\item HTTP 通信に特化した wrapper
+\end{itemize}
+
+\section*{参考コンテンツ}
+\bigskip
+\begin{itemize}
+\item http://bit.ly/cPhlyo
+\bigskip
+\item http://bit.ly/6xqaaq
+\end{itemize}
+
+\section*{使途}
+\bigskip
+\begin{itemize}
+\item mashup
+\bigskip
+\item For Cloud terminal
+\end{itemize}
+
+\section*{tutorial}
+\bigskip
+\begin{itemize}
+\item http://bit.ly/54HrOp
+\end{itemize}
+
+\section*{サンプル}
+\bigskip
+\begin{itemize}
+\item http://bit.ly/aVcRTE
+\bigskip
+\item これを基に Web サイトにアクセスして取得コンテンツを Log 出力するサンプルを作成してみましょう
+\end{itemize}
+permission の設定が必要です
+
+\section*{ライブラリの追加について補足}
+\begin{itemize}
+\item 二つの jar をスコープに入れておく必要あり
+ \begin{itemize}
+ \item {\footnotesize httpclient-4.0.1.jar}
+ \item {\footnotesize httpcore-4.0.1.jar}
+ \end{itemize}
+\item 追加の方法
+ \begin{itemize}
+ \item project → properties
+ \item Java Build Path → Library
+ \item add external jar
+ \item {\footnotesize その後、.classpath の記述を相対パスに変更する必要あり}
+ \end{itemize}
+\end{itemize}
+
+\section*{.classpath の記述例}
+{\tiny
+\begin{verbatim}
+<classpathentry kind="lib" path="lib/httpclient-4.0.1.jar"/>
+<classpathentry kind="lib" path="lib/httpcore-4.0.1.jar"/>
+\end{verbatim}
+}
+
+\end{document}

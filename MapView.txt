@@ -1,0 +1,33 @@
+-Maps API Key の取得方法 (手順)
+--Google アカウント取得
+--SDK 証明書の fingerprint 取得
+--API Key なサイトに fingerprint 登録
+--Google にログイン (http://bit.ly/9m54x4)
+--API Key 取得
+-MapView なサンプル (手順)
+--MapActivity 継承
+--isRouteDisplayed 実装
+--MapView オブジェクト生成
+--setContentView に渡す
+--Manifest への追記
+---uses-library
+---uses-permission
+-zoom について
+--zoom が無いw
+--MapView#setBuiltinZoomControls メソド
+---出しっ放しは微妙
+---出しっ放しにはならない件orz
+--タップしたら出すとかな実装って微妙なの?
+-しかも位置移動もできない件
+--MapView#setClickable()
+-位置情報サービスとの連携 (ここではやらない
+--onCreate で取得して中心表示
+---一回では微妙な件
+--GPS の回で色々ヤる方向
+--zoom なレベルもいじってみる
+-画面の回転
+--onDestroy -> onCreate 呼ばれる
+--マニフェストの activity に下記属性を設定
+---android:screenOrientation="portrait"
+---landscape だと横専用
+

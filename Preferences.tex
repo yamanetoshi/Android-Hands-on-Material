@@ -1,0 +1,58 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+\section*{Preferences}
+\vspace*{15mm}
+\begin{center}
+{\Huge {\bf 設定画面の作り方}}
+\end{center}
+
+\section*{サンプル}
+\bigskip
+\begin{itemize}
+\item 以下から取得して import しておく事
+\bigskip
+\item http://db.tt/xNwRC2
+\end{itemize}
+
+\section*{内部的な処理 (値の取得)}
+\bigskip
+\begin{itemize}
+\item Preferences オブジェクトの取得
+ \begin{itemize}
+ \item getSharedPreferenes メソド
+ \item getPreferences メソド
+ \end{itemize}
+\bigskip
+\item getString, getInt, getBoolean など
+\end{itemize}
+
+\section*{内部的な処理 (値のセット)}
+\bigskip
+\begin{itemize}
+\item Preferences オブジェクトの取得
+\bigskip
+\item Editor オブジェクトの取得
+ \begin{itemize}
+ \item Preferences\#edit() を使う
+ \end{itemize}
+\bigskip
+\item putString, putInt, putBoolean など
+\bigskip
+\item commit (Preferences\#commit) 必要
+\end{itemize}
+
+\section*{UI (PreferencesActivity)}
+\bigskip
+\begin{itemize}
+\item サンプル (http://bit.ly/rtf4C4)
+\medskip
+\item 確認してみましょう
+\medskip
+\item これを基に OptionMenu からの起動
+\medskip
+\item 設定項目増やしてみるなど
+\end{itemize}
+
+\end{document}

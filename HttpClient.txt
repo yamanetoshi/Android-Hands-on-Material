@@ -1,0 +1,22 @@
+-HttpClient クラス
+--apache.org の成果物
+--HTTP 通信に特化した wrapper
+-参考コンテンツ
+--http://bit.ly/cPhlyo
+--http://bit.ly/6xqaaq
+-使途
+--mashup
+--4 Cloud terminal
+-チュートリアル (http://bit.ly/54HrOp) をおさらい
+--http://bit.ly/1K75eQ の Chapter 1 のみで OK
+--http://bit.ly/aVcRTE のサンプルを使う方向
+-どうまとめるか
+-プロジェクトに jar の追加が必要
+--プロジェクト/lib 配下に jar をコピー
+--project -> properties
+--Java Build Path -> Library
+--add external jar
+--その後、.classpath の記述を相対 path に変更
+        <classpathentry kind="lib" path="lib/httpclient-4.0.1.jar"/>
+        <classpathentry kind="lib" path="lib/httpcore-4.0.1.jar"/>
+--絶対 path 記述だと可搬性に欠けるため

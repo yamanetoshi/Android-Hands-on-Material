@@ -1,0 +1,3 @@
+-KitchenTimerService な例をソレ
+--http://bit.ly/6mAZ6g
+

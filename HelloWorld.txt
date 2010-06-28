@@ -1,0 +1,34 @@
+-HelloWorld 作ってみせる
+--File -> New -> Project -> Android Project
+--実行
+-必要な情報をスライド表示し、作らせて実行させてみる
+-実機デバッグの方法について
+--実機設定
+---設定 -> アプリケーション -> 開発 -> USB デバッグ
+--マニフェストの修正
+---Application タブの Debuggable を true に
+--実機デバッグもやらせてみる (端末があれば
+---別途 Ubuntu からの接続確認必要
+-マニフェストについて
+--permission
+---internet 接続とか GPS アクセスなど許可が必要
+--サービスの記述
+--コンテントプロバイダの記述
+--Activity の記述
+-DDMS について
+--パースペクティブ切り替えてパーツの紹介のみ
+---Device
+---Emulator Control
+---LogCat
+---FileExplore
+-Log の見方
+--ログレベルについて
+--抽出の方法
+--export
+-Log 出力の方法
+--HelloWorld に盛り込み、Log 出力とか出力確認とか
+--Log 出力、やらせてみる
+---エミュレータで
+---実機で
+--exception 吐いた時の Log について
+---ぬるぽなエンバグさせて実演

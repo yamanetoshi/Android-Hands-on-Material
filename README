@@ -1,0 +1,13 @@
+This project depends on dvipdfmx, platex
+
+-HelloWorld
+-ActivityIntent
+-ViewAndLayout
+-MapView
+-WebView
+-Device
+-Handler
+-Service
+-Preferences
+-HttpClient
+-git

@@ -1,0 +1,198 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+\section*{UI}
+\vspace*{15mm}
+\begin{center}
+{\Huge {\bf Widget}}
+\end{center}
+
+\section*{Activity の構成要素}
+\bigskip
+\begin{itemize}
+\item Activity has Views or ViewGroups
+\bigskip
+\item ViewGroup has ViewGroups or Views
+\bigskip
+\item ViewGroup has ViewGroups or Views
+\bigskip
+\item recursive continue
+\end{itemize}
+
+\section*{Layout}
+\bigskip
+\begin{itemize}
+\item View は Widget
+\bigskip
+\item ViewGroup は Layout
+\bigskip
+\item Layout の記述は res/layout 配下の XML
+\bigskip
+\item 通常 onCreate で setContentView に渡す
+\end{itemize}
+
+\section*{代表的な View}
+\bigskip
+\begin{itemize}
+\item TextView
+\bigskip
+\item EditText
+\bigskip
+\item ImageView
+\bigskip
+\item Button
+\bigskip
+\item ImageButton
+\end{itemize}
+
+\section*{代表的な ViewGroup}
+\bigskip
+\begin{itemize}
+\item LinearLayout
+\bigskip
+\item TableLayout
+\bigskip
+\item Gallery
+\bigskip
+\item TabHost
+\end{itemize}
+
+\section*{参考 URL}
+\bigskip
+\begin{itemize}
+\item http://bit.ly/91DbG4
+\bigskip
+\item http://bit.ly/8rBLYG
+\bigskip
+\item http://bit.ly/d5ieWu
+\end{itemize}
+
+\section*{View を弄くってみましょう}
+\bigskip
+\begin{itemize}
+\item ハロワ作成
+\bigskip
+\item TextView を Button にしてみる
+\bigskip
+\item width 属性を fill\_parent から wrap\_content に
+\bigskip
+\item height 属性を wrap\_content から fill\_parent に
+\end{itemize}
+
+\section*{できれば}
+\vspace*{17mm}
+\begin{center}
+{\Huge {\bf 実機でも}}
+\end{center}
+
+\section*{イベント駆動 (リスナ) について}
+\bigskip
+\begin{itemize}
+\item {\footnotesize View にリスナ i/f を実装させてイベントが拾える}
+\bigskip
+\item {\footnotesize Button の例を試してみましょう}
+\end{itemize}
+
+\section*{Button オブジェクトの取得}
+\medskip
+\begin{itemize}
+\item 先に出てきたサンプルで試してみましょう
+\end{itemize}
+\medskip
+{\scriptsize
+\begin{verbatim}
+Button button = (Button)findViewById(R.id.button);
+\end{verbatim}
+}
+
+\section*{リスナの設定}
+\begin{itemize}
+\item クリックしたら Toast 出力
+\item setContentView の後で setOnClickListener
+\end{itemize}
+{\scriptsize
+\begin{verbatim}
+button.setOnClickListener(new OnClickListener() {
+
+    @Override
+    public void onClick(View arg0) {
+        Toast.makeText(ListenActivity.this, 
+                       "button clicked", 
+                        Toast.LENGTH_LONG).show();
+    }});
+\end{verbatim}
+}
+
+\section*{イベントの例}
+\medskip
+\begin{itemize}
+\item クリック
+\medskip
+\item タッチ
+\medskip
+\item タップ
+\medskip
+\item その他色々
+ \begin{itemize}
+ \item Android プログラミングはイベントの塊
+ \end{itemize}
+\end{itemize}
+
+\section*{Dialog}
+\bigskip
+\begin{itemize}
+\item ダイアログ画面です
+\bigskip
+\item View を継承していません
+\end{itemize}
+
+\section*{代表的な Dialog}
+\bigskip
+\begin{itemize}
+\item AlertDialog
+\bigskip
+\item DatePickerDialog
+\bigskip
+\item ProgressDialog
+\bigskip
+\item TimePickerDialog
+\bigskip
+\item ZoomDialog
+\end{itemize}
+
+\section*{Dialog のサンプル}
+\bigskip
+\begin{itemize}
+\item AlertDialog を使ってみましょう
+\bigskip
+\item http://bit.ly/bghNAh
+\end{itemize}
+
+\section*{オプションメニューについて}
+\bigskip
+\begin{itemize}
+\item Menu ボタンを押すことで画面上に現われる
+\bigskip
+\item onCreateOptionMenu メソドを使って準備
+\bigskip
+\item メニュ表示直前に呼ばれる onPrepareOptionsMenu メソド
+\end{itemize}
+
+\section*{オプションメニューのサンプル}
+\bigskip
+\begin{itemize}
+\item 実装例 (http://db.tt/HNf3bu)
+\bigskip
+\item 項目は何個まで増やせるでしょうか
+\end{itemize}
+
+\section*{チュートリアルの紹介}
+\bigskip
+\begin{itemize}
+\item NotepadTutorial
+\bigskip
+\item http://bit.ly/c8jm70
+\end{itemize}
+
+\end{document}

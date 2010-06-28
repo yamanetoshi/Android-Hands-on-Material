@@ -1,0 +1,72 @@
+-Activity の構成要素
+--Activity has View or ViewGroup
+--ViewGroup has View or ViewGroup
+--repeat
+-Layout について
+--View は Widget で ViewGroup は Layout 
+--記述は res/layout 配下の XMLファイル
+--通常 onCreate において setContentView に渡す
+-代表的な View について
+--TextView
+--EditText
+--ImageView
+--Button
+--ImageButton
+-代表的な ViewGroup について
+--LinearLayout
+--TableLayout
+--Galery
+--TabHost
+-参考
+--http://bit.ly/91DbG4
+---http://www.muo.jp/android/?devel/ui/hierarchy.html
+--http://bit.ly/8rBLYG
+---http://wikiwiki.jp/android/?UI%A5%B3%A5%F3%A5%DD%A1%BC%A5%CD%A5%F3%A5%C8%2FView
+--http://bit.ly/d5ieWu
+---http://developer.android.com/intl/ja/reference/android/widget/package-summary.html
+
+-ハロワを少し弄ってみる
+--ハロワ作成
+--TextView -> Button 変更
+--width 属性 fill_parent -> wrap_content
+--height 属性 wrap_content -> fill_parent
+
+-イベント駆動 (リスナ) について
+--View にリスナ i/f を実装させてイベントを拾えます
+--Button の例を試してみましょう
+
+-Button オブジェクトの取得
+--先に出てきたサンプルで試してみましょう
+-オブジェクトにリスナを設定
+--Toast 出力させてみる
+--setContentView した後で setOnClickListener すること
+
+-イベントの例
+--クリック
+--タップ
+--タッチ
+--その他色々
+---Android プログラミングはイベントの塊と言っても良いかも
+
+-Dialog
+--ダイアログ画面
+--View を継承してない件
+-代表的なもの
+--AlertDialog
+--DatePickerDialog
+--ProgressDialog
+--TimePickerDialog
+--ZoomDialog
+-AlertDialog の例
+--実装例 (木南さん本) を提供
+--ハロワにそのまま盛り込み
+
+-OptionMenu
+--Menu ボタンを押す事で画面上に現われる
+--onCreate で onCreateOptionMenu メソドを使用
+--Activity の状態に応じてボタン表示変更したいなら
+---表示前に毎回呼び出される onPrepareOptionsMenu メソド使用
+-例
+--実装例 (木南さん本) を提供
+---何個まで項目増やせるか実験とか
+--NotepadTutorial も紹介 http://bit.ly/c8jm70

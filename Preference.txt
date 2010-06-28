@@ -1,0 +1,15 @@
+-内部的な処理 (値の取得
+--Preferences 取得
+--getString, getInt, getBoolean など
+-内部的な処理 (値のセット
+--Preferences 取得
+--Editor なオブジェクト取得 (Preferences#edit())
+--puString, putInt, putBoolean, など
+--commit (Preferences#commit)
+-木南さんサンプルの置き場所
+--http://db.tt/xNwRC2
+-UI (PreferenesActivity
+--サンプル有り
+---http://db.tt/rtf4C4
+--これをもとに optionMenu なソレに作り替える形?
+--設定項目増やしてみるとか
