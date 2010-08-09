@@ -1,5 +1,6 @@
 \documentclass[slide,papersize]{jsarticle}
 \usepackage[dvipdfmx]{graphicx,color}
+\usepackage{moreverb}
 \begin{document}
 
 \section*{WebView}
@@ -97,5 +98,21 @@ WevView オブジェクトを作って loadUrl
 \bigskip
 \item html5 + CSS + javascript の可能性
 \end{itemize}
+
+\section*{追補}
+{\footnotesize Android 側から javascript な function 呼び出し可能}
+{\tiny
+\begin{verbatimtab}
+<script type="text/javascript">
+
+  function reloadFunction() {
+\end{verbatimtab}
+}
+{\footnotesize 上記 javascript な function を以下で呼び出せます}
+{\tiny
+\begin{verbatimtab}
+  WebView.loadUrl("javascript:reloadFunction()");
+\end{verbatimtab}
+}
 
 \end{document}
