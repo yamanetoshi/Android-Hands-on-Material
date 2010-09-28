@@ -1,4 +1,7 @@
-all:	Device git HttpClient Preferences WebView ViewAndLayout ActivityIntent HelloWorld MapView
+all:	Service Device git HttpClient Preferences WebView ViewAndLayout ActivityIntent HelloWorld MapView
+
+Service:
+	make -f Makefile.Service.mk
 
 Device:
 	make -f Makefile.Device.mk

@@ -1,13 +1,28 @@
 This project depends on dvipdfmx, platex
 
 -HelloWorld
--ActivityIntent
 -ViewAndLayout
--MapView
+--この項、ボリュームやや大目
+--SubMenu に関するフォロー必要
+--Dialog について
+---onCreateDialog
+---showDialog
+---dismissDialog
+--onPrepareOptionsMenu での状態によるメニュの書き換え
+--setContentView の呼び出しタイミング
+-ActivityIntent
 -WebView
--Device
--Handler
--Service
+--loadUrl で呼びだす javascript な function に引数が渡せる件
 -Preferences
+-MapView
+-Device
+--時間必要、事前確認必要
+-Handler
+--http://bit.ly/a6Ld6
+--http://bit.ly/ase9be
+-Service
 -HttpClient
 -git
+--http://sharedhat.com/blog/771/
+--http://sharedhat.com/blog/737/
+--http://sharedhat.com/blog/801/

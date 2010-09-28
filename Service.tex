@@ -1,0 +1,101 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+\section*{Service}
+\vspace*{15mm}
+\begin{center}
+{\Huge {\bf サービス}}
+\end{center}
+
+\section*{サンプル}
+\bigskip
+\begin{itemize}
+\item KitchenTimerService
+\bigskip
+\item http://bit.ly/6mAZ6g
+\bigskip
+\item これを使って基本的な部分をおさらい
+\end{itemize}
+
+\section*{できる事}
+\medskip
+\begin{itemize}
+\item Service の起動
+\medskip
+\item Service への接続、切断
+\medskip
+\item Service の終了
+\medskip
+\item Service と起動、接続側の連携
+ \begin{itemize}
+ \item Service から BroadcastReceiver への通知
+ \item Service との i/f も確保
+ \end{itemize}
+\end{itemize}
+
+\section*{Service の起動}
+\medskip
+\begin{itemize}
+\item 起動シーケンス
+ \begin{itemize}
+ \medskip
+ \item 起動する Service な Intent 生成
+ \medskip
+ \item startService にその Intent を渡す
+ \medskip
+ \item サービスが識別できる IntentFilter 生成
+ \medskip
+ \item registerReceiver に IntentFilter と BroadcastReceiver を渡す
+ \end{itemize}
+\end{itemize}
+
+\section*{BroadcastReceiver}
+\bigskip
+\begin{itemize}
+\item Service の起動に必要
+\bigskip
+\item onReceive で bind したサービス側からの通知を受けとる事ができる
+\bigskip
+\item Service 側からは sendBroadcast を使って通知
+\end{itemize}
+
+\section*{Service との連携 (bind)}
+\bigskip
+\begin{itemize}
+\item bindService に Intent と ServiceConnection と Context.BIND\_AUTO\_CREATE を渡す
+\bigskip
+\item この時、ServiceConnection\#onServiceConnected が呼び出される
+\bigskip
+\item Service 側では onBind メソドが callback として呼び出される
+\end{itemize}
+
+\section*{Service との切断 (unbind)}
+\bigskip
+\begin{itemize}
+\item unbindService に ServiceConnection を渡す
+\bigskip
+\item この時、ServiceConnection\#onServiceDisconnected が呼び出される
+\bigskip
+\item Service 側では onUnbind メソドが callback として呼び出される
+\end{itemize}
+
+\section*{Serviceconnection\#onServiceConnected}
+\bigskip
+\begin{itemize}
+\item 引数で渡される IBinder 方の第二引数は Service 側の onBind の戻り値
+\bigskip
+\item IBinder なオブジェクトを使って Service なオブジェクトの getter を作成しておけばサービス起動側から Service な public メソドの呼び出しが可能
+\end{itemize}
+
+\section*{Service の終了}
+\bigskip
+\begin{itemize}
+\item unbindService メソドによりサービスとの切断
+\bigskip
+\item unregisterReceiver メソドに BroadcastReceiver のサブクラスのインスタンスを渡す
+\bigskip
+\item Service なオブジェクトの stopSelf というメソドを呼び出してサービスを終了
+\end{itemize}
+
+\end{document}
