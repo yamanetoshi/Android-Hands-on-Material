@@ -1,22 +1,28 @@
 This project depends on dvipdfmx, platex
 
 -HelloWorld
+--doing the 'Hello World'
+--testing by the actual equipment
+--about Android Manifest
+--about DDMS
+--about Log
+--how to deal when an exception occurs
 -ViewAndLayout
---この項、ボリュームやや大目
---SubMenu に関するフォロー必要
---Dialog について
+--this item is so large amount
+--it needs following of SubMenu
+--about Dialog
 ---onCreateDialog
 ---showDialog
 ---dismissDialog
---onPrepareOptionsMenu での状態によるメニュの書き換え
---setContentView の呼び出しタイミング
+--about rewriting the Menu when the state changed in onPrepareOptionsMenu method
+--timing of calling the setContentView method
 -ActivityIntent
 -WebView
---loadUrl で呼びだす javascript な function に引数が渡せる件
+--about calling the javascript function by loadUrl method
 -Preferences
 -MapView
 -Device
---時間必要、事前確認必要
+--it needs so many time, it must be confirmed in advance
 -Handler
 --http://bit.ly/a6Ld6
 --http://bit.ly/ase9be
