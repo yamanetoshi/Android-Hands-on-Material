@@ -9,8 +9,16 @@ This project depends on dvipdfmx, platex
 --how to deal when an exception occurs
 -ViewAndLayout
 --this item is so large amount
+--about res/layout/hoge.xml
+---setContentView method
+--about event listener (event driven)
+---how to use the Button#setOnClickListener method
+--Toast (so pretty)
+--about resource (res/values/string.xml)
+---how to use Context#getString method
 --it needs following of SubMenu
 --about Dialog
+---example (using AlertDialog)
 ---onCreateDialog
 ---showDialog
 ---dismissDialog
