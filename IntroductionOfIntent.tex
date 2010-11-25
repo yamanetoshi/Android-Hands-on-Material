@@ -1,0 +1,101 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+%%\section*{Intent 入門}
+\vspace*{15mm}
+\begin{center}
+{\Huge {\bf Intent 入門}}
+\end{center}
+
+\section*{local mashup}
+\bigskip
+\begin{itemize}
+\item 導入済みなアプリとの連携が可能
+\bigskip
+\item 端末の中で mashup できる
+\end{itemize}
+
+\section*{明示的 intent}
+\bigskip
+\begin{itemize}
+\item 次の画面はコードに記述される
+\bigskip
+\item new intent(this, NextActivity.class);
+\end{itemize}
+
+\section*{暗黙的 intent}
+\bigskip
+\begin{itemize}
+\item より優れた intent の使い方
+\bigskip
+\item 直接指定が無くなる事で Activity 間の結合が疎になる
+\bigskip
+\item Manifest に intent-filter を記述\\→intent-filter により\_次\_の Activity が決まる
+\end{itemize}
+
+\section*{intent-filter}
+\bigskip
+\begin{itemize}
+\item AndroidManifest.xml にて指定
+\bigskip
+\item action、data、category という順でマッチ
+\bigskip
+\item 複数候補がある場合は選択ダイアログが表示される
+\end{itemize}
+
+\section*{参考コンテンツ}
+\bigskip
+\begin{itemize}
+\item http://goo.gl/SYlmD
+\bigskip
+\item http://bit.ly/6xqaaq
+\bigskip
+\item http://goo.gl/B6ZFa
+\end{itemize}
+
+\section*{intent-filter サンプル}
+\bigskip
+\begin{itemize}
+\item 選択ダイアログが表示されます
+\bigskip
+\item http://db.tt/hxolnA3
+\end{itemize}
+
+\section*{もう少し}
+\bigskip
+\begin{itemize}
+\item action.MAIN で LAUNCHER な category\\→トップレベルからの起動\\→ランチャにインストールできる Activity
+\bigskip
+\item 暗黙的 intent の場合、category が DEFAULT なら明示的ソレと同じ動作になる
+\end{itemize}
+
+\section*{もう少し (その二)}
+\bigskip
+\begin{itemize}
+\item ActivityはDATAに対し、ACTIONを行うというRESTfulな考え方に基いた設計を期待
+\bigskip
+\item 複数のActitivityを暗黙的Intentを用いることにより状態遷移するアプリケーションを設計することがAndroidらしいアプリケーションを作成することに繋がる
+\end{itemize}
+
+\section*{BroadcastIntent}
+\bigskip
+\begin{itemize}
+\item 全てのアプリケーションに対して通知が可能
+\bigskip
+\item 受け取る事ができるのは BroadcastReceiver
+\end{itemize}
+
+\section*{BroadcastIntent サンプル}
+\bigskip
+\begin{itemize}
+\item Service の資料としても有用です
+\bigskip
+\item http://goo.gl/GicOa
+\bigskip
+\item intent-filter を Manifest に記述する方法もあり
+\end{itemize}
+
+\end{document}
+
+
