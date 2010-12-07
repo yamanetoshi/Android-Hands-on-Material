@@ -1,0 +1,99 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+\section*{非同期処理}
+\vspace*{15mm}
+\begin{center}
+{\Huge {\bf 非同期処理など}}
+\end{center}
+
+\section*{Handler}
+\bigskip
+\begin{itemize}
+\item http://bit.ly/a6Ld6
+\bigskip
+\item http://bit.ly/ase9be
+\end{itemize}
+
+\section*{AsyncTask}
+\bigskip
+\begin{itemize}
+\item http://goo.gl/yhhk
+\end{itemize}
+
+\section*{IntentService}
+\bigskip
+\begin{itemize}
+\item http://goo.gl/vP8av
+\end{itemize}
+
+\section*{Service のサンプル}
+\bigskip
+\begin{itemize}
+\item 下記から取得して import しておきましょう
+\bigskip
+\item http://db.tt/izBDGlP
+\end{itemize}
+
+
+\section*{Service}
+\smallskip
+\begin{itemize}
+\item android.app.Service を継承
+\smallskip
+\item callback
+ \begin{itemize}
+ \item onCreate \\→サービスが初めて起動された時
+ \item onStart \\→startService メソド呼び出し時
+ \end{itemize}
+\end{itemize}
+startService で起動はできますが、\\操作は一切不可能
+
+\section*{接続 (1)}
+\bigskip
+\begin{itemize}
+\item AIDL によるプロセス間通信
+\bigskip
+\item AIDL にはパケジ宣言と interface の記述
+\bigskip
+\item java ソースが gen 配下に自動生成
+\end{itemize}
+
+\section*{接続 (2)}
+\medskip
+\begin{itemize}
+\item サービス側へのインターフェースの盛り込み
+\medskip
+ \begin{itemize}
+ \item インターフェース名.Stub 型変数の宣言
+ \medskip
+ \item 抽象メソドを override (処理の記述)
+ \medskip
+ \item onBind にて上記 Stub 型変数を戻す
+ \end{itemize}
+\end{itemize}
+
+\section*{接続 (3)}
+\smallskip
+\begin{itemize}
+\item 自動生成な java の interface 型変数定義
+\medskip
+\item ServiceConnection 型の属性定義
+ \begin{itemize}
+ \item onServiceConnected で interface なオブジェクト取得
+ \end{itemize}
+\medskip
+\item startService 後に bindService 必要
+\end{itemize}
+
+
+\section*{もう少し}
+\bigskip
+\begin{itemize}
+\item Broadcast Intent の受信について
+\bigskip
+\item サンプルの Activity がサービスが送信している Broadcast Intent を受信して Toast 出力する形で修正してみましょう
+\end{itemize}
+
+\end{document}

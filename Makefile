@@ -1,4 +1,7 @@
-all:	IntroductionOfIntent Service Device git HttpClient Preferences WebView ViewAndLayout ActivityIntent HelloWorld MapView
+all:	AsyncProcessing IntroductionOfIntent Service Device git HttpClient Preferences WebView ViewAndLayout ActivityIntent HelloWorld MapView
+
+AsyncProcessing:
+	make -f Makefile.AsyncProcessing.mk
 
 IntroductionOfIntent:
 	make -f Makefile.IntroductionOfIntent.mk
