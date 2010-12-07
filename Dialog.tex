@@ -1,0 +1,56 @@
+\documentclass[slide,papersize]{jsarticle}
+\usepackage[dvipdfmx]{graphicx,color}
+\begin{document}
+
+\section*{Dialog について}
+\vspace*{15mm}
+\begin{center}
+{\Huge {\bf 追補など}}
+\end{center}
+
+\section*{Dialog 取扱}
+\bigskip
+\begin{itemize}
+\item ANDROID HACKS の方法、沢山だと煩雑
+\bigskip
+\item 整理するための便利メソッドあり
+ \begin{itemize}
+ \item onCreateDialog
+ \item onPrepareDialog
+ \item showDialog
+ \end{itemize}
+\item Dialog を ID で管理できます
+\end{itemize}
+
+\section*{どうやるか}
+\bigskip
+\begin{itemize}
+\item int で unique な定数を Dialog 毎に作成
+\bigskip
+\item on\{Create, Prepare\}Dialog では id で切り分け
+\bigskip
+\item 表示する場合には showDialog に id を渡す
+\end{itemize}
+
+\section*{非表示化}
+\bigskip
+\begin{itemize}
+\item 親から dismissDialog(id) する方法
+\bigskip
+\item 自分で dismiss() する方法
+\bigskip
+\item 以降不要又は状態クリア→ removeDialog()
+\end{itemize}
+
+\section*{詳細}
+\bigskip
+\begin{itemize}
+\item http://goo.gl/CGiqe
+\end{itemize}
+こちらをざっくり読み合わせましょう
+
+\section*{ANDROID HACKS の}
+\bigskip
+サンプルをこの方式で書き換えてみましょう。
+
+\end{document}
