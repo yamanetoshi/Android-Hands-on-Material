@@ -5,97 +5,97 @@
 \section*{Service}
 \vspace*{15mm}
 \begin{center}
-{\Huge {\bf ã‚µãƒ¼ãƒ“ã‚¹}}
+{\Huge {\bf ¥µ¡¼¥Ó¥¹}}
 \end{center}
 
-\section*{ã‚µãƒ³ãƒ—ãƒ«}
+\section*{¥µ¥ó¥×¥ë}
 \bigskip
 \begin{itemize}
 \item KitchenTimerService
 \bigskip
 \item http://bit.ly/6mAZ6g
 \bigskip
-\item ã“ã‚Œã‚’ä½¿ã£ã¦åŸºæœ¬çš„ãªéƒ¨åˆ†ã‚’ãŠã•ã‚‰ã„
+\item ¤³¤ì¤ò»È¤Ã¤Æ´ğËÜÅª¤ÊÉôÊ¬¤ò¤ª¤µ¤é¤¤
 \end{itemize}
 
-\section*{ã§ãã‚‹äº‹}
+\section*{¤Ç¤­¤ë»ö}
 \medskip
 \begin{itemize}
-\item Service ã®èµ·å‹•
+\item Service ¤Îµ¯Æ°
 \medskip
-\item Service ã¸ã®æ¥ç¶šã€åˆ‡æ–­
+\item Service ¤Ø¤ÎÀÜÂ³¡¢ÀÚÃÇ
 \medskip
-\item Service ã®çµ‚äº†
+\item Service ¤Î½ªÎ»
 \medskip
-\item Service ã¨èµ·å‹•ã€æ¥ç¶šå´ã®é€£æº
+\item Service ¤Èµ¯Æ°¡¢ÀÜÂ³Â¦¤ÎÏ¢·È
  \begin{itemize}
- \item Service ã‹ã‚‰ BroadcastReceiver ã¸ã®é€šçŸ¥
- \item Service ã¨ã® i/f ã‚‚ç¢ºä¿
+ \item Service ¤«¤é BroadcastReceiver ¤Ø¤ÎÄÌÃÎ
+ \item Service ¤È¤Î i/f ¤â³ÎÊİ
  \end{itemize}
 \end{itemize}
 
-\section*{Service ã®èµ·å‹•}
+\section*{Service ¤Îµ¯Æ°}
 \medskip
 \begin{itemize}
-\item èµ·å‹•ã‚·ãƒ¼ã‚±ãƒ³ã‚¹
+\item µ¯Æ°¥·¡¼¥±¥ó¥¹
  \begin{itemize}
  \medskip
- \item èµ·å‹•ã™ã‚‹ Service ãª Intent ç”Ÿæˆ
+ \item µ¯Æ°¤¹¤ë Service ¤Ê Intent À¸À®
  \medskip
- \item startService ã«ãã® Intent ã‚’æ¸¡ã™
+ \item startService ¤Ë¤½¤Î Intent ¤òÅÏ¤¹
  \medskip
- \item ã‚µãƒ¼ãƒ“ã‚¹ãŒè­˜åˆ¥ã§ãã‚‹ IntentFilter ç”Ÿæˆ
+ \item ¥µ¡¼¥Ó¥¹¤¬¼±ÊÌ¤Ç¤­¤ë IntentFilter À¸À®
  \medskip
- \item registerReceiver ã« IntentFilter ã¨ BroadcastReceiver ã‚’æ¸¡ã™
+ \item registerReceiver ¤Ë IntentFilter ¤È BroadcastReceiver ¤òÅÏ¤¹
  \end{itemize}
 \end{itemize}
 
 \section*{BroadcastReceiver}
 \bigskip
 \begin{itemize}
-\item Service ã®èµ·å‹•ã«å¿…è¦
+\item Service ¤Îµ¯Æ°¤ËÉ¬Í×
 \bigskip
-\item onReceive ã§ bind ã—ãŸã‚µãƒ¼ãƒ“ã‚¹å´ã‹ã‚‰ã®é€šçŸ¥ã‚’å—ã‘ã¨ã‚‹äº‹ãŒã§ãã‚‹
+\item onReceive ¤Ç bind ¤·¤¿¥µ¡¼¥Ó¥¹Â¦¤«¤é¤ÎÄÌÃÎ¤ò¼õ¤±¤È¤ë»ö¤¬¤Ç¤­¤ë
 \bigskip
-\item Service å´ã‹ã‚‰ã¯ sendBroadcast ã‚’ä½¿ã£ã¦é€šçŸ¥
+\item Service Â¦¤«¤é¤Ï sendBroadcast ¤ò»È¤Ã¤ÆÄÌÃÎ
 \end{itemize}
 
-\section*{Service ã¨ã®é€£æº (bind)}
+\section*{Service ¤È¤ÎÏ¢·È (bind)}
 \bigskip
 \begin{itemize}
-\item bindService ã« Intent ã¨ ServiceConnection ã¨ Context.BIND\_AUTO\_CREATE ã‚’æ¸¡ã™
+\item bindService ¤Ë Intent ¤È ServiceConnection ¤È Context.BIND\_AUTO\_CREATE ¤òÅÏ¤¹
 \bigskip
-\item ã“ã®æ™‚ã€ServiceConnection\#onServiceConnected ãŒå‘¼ã³å‡ºã•ã‚Œã‚‹
+\item ¤³¤Î»ş¡¢ServiceConnection\#onServiceConnected ¤¬¸Æ¤Ó½Ğ¤µ¤ì¤ë
 \bigskip
-\item Service å´ã§ã¯ onBind ãƒ¡ã‚½ãƒ‰ãŒ callback ã¨ã—ã¦å‘¼ã³å‡ºã•ã‚Œã‚‹
+\item Service Â¦¤Ç¤Ï onBind ¥á¥½¥É¤¬ callback ¤È¤·¤Æ¸Æ¤Ó½Ğ¤µ¤ì¤ë
 \end{itemize}
 
-\section*{Service ã¨ã®åˆ‡æ–­ (unbind)}
+\section*{Service ¤È¤ÎÀÚÃÇ (unbind)}
 \bigskip
 \begin{itemize}
-\item unbindService ã« ServiceConnection ã‚’æ¸¡ã™
+\item unbindService ¤Ë ServiceConnection ¤òÅÏ¤¹
 \bigskip
-\item ã“ã®æ™‚ã€ServiceConnection\#onServiceDisconnected ãŒå‘¼ã³å‡ºã•ã‚Œã‚‹
+\item ¤³¤Î»ş¡¢ServiceConnection\#onServiceDisconnected ¤¬¸Æ¤Ó½Ğ¤µ¤ì¤ë
 \bigskip
-\item Service å´ã§ã¯ onUnbind ãƒ¡ã‚½ãƒ‰ãŒ callback ã¨ã—ã¦å‘¼ã³å‡ºã•ã‚Œã‚‹
+\item Service Â¦¤Ç¤Ï onUnbind ¥á¥½¥É¤¬ callback ¤È¤·¤Æ¸Æ¤Ó½Ğ¤µ¤ì¤ë
 \end{itemize}
 
 \section*{Serviceconnection\#onServiceConnected}
 \bigskip
 \begin{itemize}
-\item å¼•æ•°ã§æ¸¡ã•ã‚Œã‚‹ IBinder æ–¹ã®ç¬¬äºŒå¼•æ•°ã¯ Service å´ã® onBind ã®æˆ»ã‚Šå€¤
+\item °ú¿ô¤ÇÅÏ¤µ¤ì¤ë IBinder Êı¤ÎÂèÆó°ú¿ô¤Ï Service Â¦¤Î onBind ¤ÎÌá¤êÃÍ
 \bigskip
-\item IBinder ãªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½¿ã£ã¦ Service ãªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã® getter ã‚’ä½œæˆã—ã¦ãŠã‘ã°ã‚µãƒ¼ãƒ“ã‚¹èµ·å‹•å´ã‹ã‚‰ Service ãª public ãƒ¡ã‚½ãƒ‰ã®å‘¼ã³å‡ºã—ãŒå¯èƒ½
+\item IBinder ¤Ê¥ª¥Ö¥¸¥§¥¯¥È¤ò»È¤Ã¤Æ Service ¤Ê¥ª¥Ö¥¸¥§¥¯¥È¤Î getter ¤òºîÀ®¤·¤Æ¤ª¤±¤Ğ¥µ¡¼¥Ó¥¹µ¯Æ°Â¦¤«¤é Service ¤Ê public ¥á¥½¥É¤Î¸Æ¤Ó½Ğ¤·¤¬²ÄÇ½
 \end{itemize}
 
-\section*{Service ã®çµ‚äº†}
+\section*{Service ¤Î½ªÎ»}
 \bigskip
 \begin{itemize}
-\item unbindService ãƒ¡ã‚½ãƒ‰ã«ã‚ˆã‚Šã‚µãƒ¼ãƒ“ã‚¹ã¨ã®åˆ‡æ–­
+\item unbindService ¥á¥½¥É¤Ë¤è¤ê¥µ¡¼¥Ó¥¹¤È¤ÎÀÚÃÇ
 \bigskip
-\item unregisterReceiver ãƒ¡ã‚½ãƒ‰ã« BroadcastReceiver ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æ¸¡ã™
+\item unregisterReceiver ¥á¥½¥É¤Ë BroadcastReceiver ¤Î¥µ¥Ö¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÅÏ¤¹
 \bigskip
-\item Service ãªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã® stopSelf ã¨ã„ã†ãƒ¡ã‚½ãƒ‰ã‚’å‘¼ã³å‡ºã—ã¦ã‚µãƒ¼ãƒ“ã‚¹ã‚’çµ‚äº†
+\item Service ¤Ê¥ª¥Ö¥¸¥§¥¯¥È¤Î stopSelf ¤È¤¤¤¦¥á¥½¥É¤ò¸Æ¤Ó½Ğ¤·¤Æ¥µ¡¼¥Ó¥¹¤ò½ªÎ»
 \end{itemize}
 
 \end{document}

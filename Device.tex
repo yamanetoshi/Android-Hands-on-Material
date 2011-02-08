@@ -2,170 +2,170 @@
 \usepackage[dvipdfmx]{graphicx,color}
 \begin{document}
 
-\section*{ã‚»ãƒ³ã‚µç­‰}
+\section*{¥»¥ó¥µÅù}
 \vspace*{13mm}
 \begin{center}
-{\Huge {\bf ç‰¹æ®Šãª\\å…¥åŠ›ãƒ‡ãƒã‚¤ã‚¹}}
+{\Huge {\bf ÆÃ¼ì¤Ê\\ÆşÎÏ¥Ç¥Ğ¥¤¥¹}}
 \end{center}
 
 \section*{agenda}
 \bigskip
 \begin{itemize}
-\item éŸ³å£°å…¥åŠ›
+\item ²»À¼ÆşÎÏ
 \bigskip
 \item GPS
 \bigskip
-\item ã‚«ãƒ¡ãƒ©
+\item ¥«¥á¥é
 \bigskip
-\item å„ç¨®ã‚»ãƒ³ã‚µ
+\item ³Æ¼ï¥»¥ó¥µ
 \end{itemize}
 
-\section*{éŸ³å£°å…¥åŠ›}
+\section*{²»À¼ÆşÎÏ}
 \bigskip
 \begin{itemize}
-\item google ãª Android ãƒ‡ãƒã‚¤ã‚¹ (?) ã®ã¿
+\item google ¤Ê Android ¥Ç¥Ğ¥¤¥¹ (?) ¤Î¤ß
 \bigskip
-\item éŸ³å£°æ¤œç´¢ api ã®å°å…¥å¿…é ˆ
+\item ²»À¼¸¡º÷ api ¤ÎÆ³ÆşÉ¬¿Ü
 \end{itemize}
 
-\section*{ã‚µãƒ³ãƒ—ãƒ«ç¢ºèª}
+\section*{¥µ¥ó¥×¥ë³ÎÇ§}
 \bigskip
 \begin{itemize}
 \item http://db.tt/ETXCOa
 \bigskip
  \begin{itemize}
- \item ãƒ•ã‚¡ã‚¤ãƒ«å–å¾—
- \item Eclipse ã« import
- \item å†…å®¹ç¢ºèªã—ã¦ã¿ã¾ã—ã‚‡ã†
+ \item ¥Õ¥¡¥¤¥ë¼èÆÀ
+ \item Eclipse ¤Ë import
+ \item ÆâÍÆ³ÎÇ§¤·¤Æ¤ß¤Ş¤·¤ç¤¦
  \end{itemize}
 \bigskip
  \begin{itemize}
- \item Intent ã«æ¸¡ã—ã¦ã„ã‚‹å®šæ•°
+ \item Intent ¤ËÅÏ¤·¤Æ¤¤¤ëÄê¿ô
  \item ACTION\_RECOGNIZE\_SPEECH
  \item ACTION\_WEB\_SEARCH
  \end{itemize}
 \end{itemize}
 
-\section*{å®Ÿæ©Ÿã§å‹•ä½œç¢ºèª}
+\section*{¼Âµ¡¤ÇÆ°ºî³ÎÇ§}
 \bigskip
 \begin{itemize}
-\item å®Ÿæ©Ÿã§ãªã„ã¨å‹•ä½œç¢ºèªã§ãã¾ã›ã‚“
+\item ¼Âµ¡¤Ç¤Ê¤¤¤ÈÆ°ºî³ÎÇ§¤Ç¤­¤Ş¤»¤ó
 \end{itemize}
 
 \section*{GPS}
 \bigskip
 \begin{itemize}
-\item permission ã®è¨­å®š
+\item permission ¤ÎÀßÄê
 \bigskip
-\item ãƒ‡ãƒ¼ã‚¿å–å¾—æ‰‹é †
+\item ¥Ç¡¼¥¿¼èÆÀ¼ê½ç
 \end{itemize}
 
 \section*{permission}
 \bigskip
 \begin{itemize}
-\item \begin{verbatim}ACCESS_FINE_LOCATION ã®è¿½åŠ \end{verbatim}
+\item \begin{verbatim}ACCESS_FINE_LOCATION ¤ÎÄÉ²Ã\end{verbatim}
 \bigskip
-\item ã‚¨ãƒŸãƒ¥ãƒ¬ãƒ¼ã‚¿ã§è©¦é¨“ã™ã‚‹å ´åˆ
+\item ¥¨¥ß¥å¥ì¡¼¥¿¤Ç»î¸³¤¹¤ë¾ì¹ç
  \begin{itemize}
- \item \begin{verbatim}ACCESS_MOCK_LOCATION ã®è¿½åŠ \end{verbatim}
+ \item \begin{verbatim}ACCESS_MOCK_LOCATION ¤ÎÄÉ²Ã\end{verbatim}
  \end{itemize}
 \end{itemize}
 
-\section*{å®Ÿè£…}
+\section*{¼ÂÁõ}
 \bigskip
 \begin{itemize}
-\item Activity ã« LocationListener å®Ÿè£…
+\item Activity ¤Ë LocationListener ¼ÂÁõ
 \bigskip
-\item ãƒ¡ã‚½ãƒƒãƒ‰å®Ÿè£…
+\item ¥á¥½¥Ã¥É¼ÂÁõ
  \begin{itemize}
- \item {\scriptsize GPS ã‚¤ãƒ™ãƒ³ãƒˆã®ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯}
- \item {\scriptsize \begin{verbatim}ä¸»ã« LocationListener#onLocationChanged()\end{verbatim}}
+ \item {\scriptsize GPS ¥¤¥Ù¥ó¥È¤Î¥³¡¼¥ë¥Ğ¥Ã¥¯}
+ \item {\scriptsize \begin{verbatim}¼ç¤Ë LocationListener#onLocationChanged()\end{verbatim}}
  \end{itemize}
 \bigskip
-\item {\scriptsize \begin{verbatim}Activity#getSystemService() ã§ LocationManager å–å¾—\end{verbatim}}
+\item {\scriptsize \begin{verbatim}Activity#getSystemService() ¤Ç LocationManager ¼èÆÀ\end{verbatim}}
 \bigskip
-\item {\scriptsize \begin{verbatim}LocationManager#requestLocationUpdates() å‘¼ã³å‡ºã—\end{verbatim}}
+\item {\scriptsize \begin{verbatim}LocationManager#requestLocationUpdates() ¸Æ¤Ó½Ğ¤·\end{verbatim}}
 \end{itemize}
 
-\section*{å®Ÿè£…ä¾‹}
-{\footnotesize ã“ã‚“ãªã‚«ãƒ³ã‚¸? (ã“ã‚Œã ã‘ã ã¨æœªã ä½•ã‚‚ã—ã¾ã›ã‚“)}
+\section*{¼ÂÁõÎã}
+{\footnotesize ¤³¤ó¤Ê¥«¥ó¥¸? (¤³¤ì¤À¤±¤À¤ÈÌ¤¤À²¿¤â¤·¤Ş¤»¤ó)}
 \begin{center}
 \includegraphics[scale=0.25]{locationListener.eps}
 \end{center}
 
-\section*{å®Ÿè£…ä¾‹}
+\section*{¼ÂÁõÎã}
 \bigskip
 \begin{itemize}
-\item ä½ç½®æƒ…å ±ã‚’ Log å‡ºåŠ›ã—ã¦ã¿ã‚‹
+\item °ÌÃÖ¾ğÊó¤ò Log ½ĞÎÏ¤·¤Æ¤ß¤ë
 \bigskip
-\item åœ°å›³ã¨ã®é€£æº
+\item ÃÏ¿Ş¤È¤ÎÏ¢·È
 \bigskip
-\item ä½æ‰€ã«å¤‰æ›ã—ã¦å‡ºåŠ›ã—ã¦ã¿ã¾ã—ã‚‡ã† (è‡ªåŠ›
+\item ½»½ê¤ËÊÑ´¹¤·¤Æ½ĞÎÏ¤·¤Æ¤ß¤Ş¤·¤ç¤¦ (¼«ÎÏ
 \end{itemize}
 
-\section*{Log å‡ºåŠ›}
+\section*{Log ½ĞÎÏ}
 \begin{itemize}
-\item å‡ºåŠ›ã—ã¦ã¿ã¾ã—ã‚‡ã†
+\item ½ĞÎÏ¤·¤Æ¤ß¤Ş¤·¤ç¤¦
 \end{itemize}
 \begin{center}
 \includegraphics[scale=0.4]{locationLog.eps}
 \end{center}
 
-\section*{å‹•ã‹ã™å‰ã«}
+\section*{Æ°¤«¤¹Á°¤Ë}
 \bigskip
 \begin{itemize}
-\item {\scriptsize GPS ãƒ‡ãƒã‚¤ã‚¹ã®ãƒªã‚¹ãƒ³ã¯æ˜ç¤ºçš„ã«æ­¢ã‚ã‚‹å¿…è¦ã‚ã‚Š}
+\item {\scriptsize GPS ¥Ç¥Ğ¥¤¥¹¤Î¥ê¥¹¥ó¤ÏÌÀ¼¨Åª¤Ë»ß¤á¤ëÉ¬Í×¤¢¤ê}
  \begin{itemize}
- \item {\scriptsize onPause() ã§åœæ­¢ (removeUpdates)}
+ \item {\scriptsize onPause() ¤ÇÄä»ß (removeUpdates)}
  \medskip
- \item {\scriptsize onResume() ã§é–‹å§‹ (requestLocationUpdates)}
+ \item {\scriptsize onResume() ¤Ç³«»Ï (requestLocationUpdates)}
  \end{itemize}
 \medskip
-\item {\scriptsize ç”»é¢ã‚‚å›ºå®šã—ãŸæ–¹ãŒè‰¯ã„ (onCreateã€onStop å‘¼ã³å‡ºã—ã‚’é˜²ã)}
+\item {\scriptsize ²èÌÌ¤â¸ÇÄê¤·¤¿Êı¤¬ÎÉ¤¤ (onCreate¡¢onStop ¸Æ¤Ó½Ğ¤·¤òËÉ¤°)}
 \medskip
-\item {\scriptsize ãƒ­ã‚°å‡ºåŠ›ã¾ã§ã«è‹¥å¹²æ™‚é–“ãŒã‹ã‹ã‚Šã¾ã™}
+\item {\scriptsize ¥í¥°½ĞÎÏ¤Ş¤Ç¤Ë¼ã´³»ş´Ö¤¬¤«¤«¤ê¤Ş¤¹}
 \end{itemize}
 
-\section*{ã‚µãƒ³ãƒ—ãƒ«}
+\section*{¥µ¥ó¥×¥ë}
 \bigskip
 \begin{itemize}
-\item å–å¾—å¯èƒ½ãªæƒ…å ±ã‚’å…¨éƒ¨å‡ºåŠ›ã—ã¦ã¿ã¾ã™
+\item ¼èÆÀ²ÄÇ½¤Ê¾ğÊó¤òÁ´Éô½ĞÎÏ¤·¤Æ¤ß¤Ş¤¹
  \begin{itemize}
- \item ç·¯åº¦ã€è»½åº¦
- \item æ¨™é«˜
- \item é€Ÿåº¦
+ \item °ŞÅÙ¡¢·ÚÅÙ
+ \item É¸¹â
+ \item Â®ÅÙ
  \end{itemize}
 \bigskip
 \item http://db.tt/zSSCCV
 \end{itemize}
 
-\section*{åœ°å›³ã¨ã®é€£æº (æº–å‚™)}
+\section*{ÃÏ¿Ş¤È¤ÎÏ¢·È (½àÈ÷)}
 \bigskip
 \begin{itemize}
-\item MapView ã¨ MapController ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å–å¾—
+\item MapView ¤È MapController ¥ª¥Ö¥¸¥§¥¯¥È¤Î¼èÆÀ
  \begin{itemize}
- \item MapView ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ç”Ÿæˆ
- \item setClickable ã™ã‚‹
- \item setBuiltInZoomControls ã™ã‚‹
- \item \begin{verbatim}MapView#getController ã§ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå–å¾—\end{verbatim}
+ \item MapView ¥ª¥Ö¥¸¥§¥¯¥È¤ÎÀ¸À®
+ \item setClickable ¤¹¤ë
+ \item setBuiltInZoomControls ¤¹¤ë
+ \item \begin{verbatim}MapView#getController ¤Ç¥ª¥Ö¥¸¥§¥¯¥È¼èÆÀ\end{verbatim}
  \end{itemize}
 \end{itemize}
 
-\section*{åœ°å›³ã¨ã®é€£æº (onLocationChanged)}
+\section*{ÃÏ¿Ş¤È¤ÎÏ¢·È (onLocationChanged)}
 \bigskip
 \begin{itemize}
-\item GeoPoint ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç”Ÿæˆ
+\item GeoPoint ¥ª¥Ö¥¸¥§¥¯¥ÈÀ¸À®
  \begin{itemize}
- \item ç·¯åº¦ã¨è»½åº¦ã‚’å–å¾—ã—ã¦ 1E6 ã‚’æ›ã‘ã¦ int ã«ã‚­ãƒ£ã‚¹ãƒˆ
+ \item °ŞÅÙ¤È·ÚÅÙ¤ò¼èÆÀ¤·¤Æ 1E6 ¤ò³İ¤±¤Æ int ¤Ë¥­¥ã¥¹¥È
  \end{itemize}
 \bigskip
-\item \begin{verbatim}MapController#animateTo ã«æ¸¡ã™\end{verbatim}
+\item \begin{verbatim}MapController#animateTo ¤ËÅÏ¤¹\end{verbatim}
 \end{itemize}
 
-\section*{ã‚«ãƒ¡ãƒ©ã®å–ã‚Šæ‰±ã„}
+\section*{¥«¥á¥é¤Î¼è¤ê°·¤¤}
 Under Construction
 
-\section*{ã‚»ãƒ³ã‚µ}
+\section*{¥»¥ó¥µ}
 Under Construction
 
 \end{document}

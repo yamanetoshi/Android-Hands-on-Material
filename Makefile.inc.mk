@@ -1,5 +1,5 @@
-DVIPDFMX=/opt/local/bin/dvipdfmx
-LATEX=/opt/local/bin/platex
+DVIPDFMX=/usr/bin/dvipdfmx
+LATEX=/usr/bin/platex
 
 .SUFFIXES: .tex .dvi .pdf
 
